@@ -30,8 +30,7 @@
         margin-left:1.2em;
         margin-right:1.2em;
         margin-top:0em;
-        text-decoration:none;
-        color:blue;
+        color:#0065FC;
         font-size:0.9em;
     }
     
@@ -64,7 +63,7 @@
     .search .btn-recherche {
         display:block;
         background:#0065FC;
-        width:5em;
+        width:6em;
         height:1.44em;
         border-top-right-radius: 0.3em;
         border-bottom-right-radius: 0.3em;
@@ -76,7 +75,7 @@
      }
         
      .search input[type=text] {
-        text-shadow:1 0.06em BLUE;
+        text-shadow:1 0.06em #0065FC;
         float:left;
         height:1.44em;
         width:9.6em;
@@ -331,7 +330,7 @@
         align-content:space-around;
         background:#F2F2F2;
         width:80%;
-        height:24em;
+        height:28em;
         border-radius:0.6em;
         margin-right:2%;
     }  
@@ -433,14 +432,15 @@
         display:flex;
         width:96%;
         height:15empx;
-        margin-top:2.4em;
+        margin-top:1em;
         border-radius:0.6em;
         padding-left:1.8em;
     }
 
     .zone_activity{
         width:100%;
-        height:1.2em;   
+        height:1.2em;  
+        margin-top:5em; 
     }
    
     .box{  
@@ -524,7 +524,7 @@
     footer{
         display:flex;
         width: 100%;
-        height:7em;
+        height:8em;
         background:#F2F2F2;
         margin-top:1.8em;
         border-radius:0.6em;   
@@ -549,11 +549,12 @@
         /* tablette entre 600 et 1024px*/
         /* pc et autre au dela de 1024*/
  
-@media screen and (max-width:600px){
+@media screen and (max-width:36em){
 
     body{
-        width:599px;
-        float:center;
+        width:auto;
+        margin-left:1em;
+        margin-right:1em;
     }
 
     p,li,h2,h4,h5.placeholder{
@@ -574,27 +575,34 @@
     .inscription{
         width:auto;
         margin-left:auto;
-        margin-right:50px;
+        margin-right:1em;
     }
     
     nav{
+        background:pink;
         width:auto;
         flex-direction:column; 
-        margin-top:50px;
+        margin-top:3em;
+        float:none;
         margin-left:auto;
         margin-right:auto;
     }
 
     nav a {              
         flex-direction:column;
-        margin-bottom:10px;
+        margin-bottom:0.6em;
+    }
+
+    .hh{
+       width:auto;
+      margin-left:60px;  
     }
 
   /*filtre*/               
             
     .titre{
         width:auto;
-        margin-top:55px;
+        margin-top:2em;
         text-align:left;
     }
 
@@ -615,11 +623,11 @@
 
 
     #conteneur1{
-        width:300px;
-        margin-top:850px;
+        width:18em;
+        margin-top:56em;
         flex-direction: column-reverse;    
-        margin-left:auto;
-        margin-right:auto;
+        margin-left:0em;
+      
     }
 
     .entete_hebergement, .pied_hebergement{  
@@ -631,77 +639,75 @@
 
         background:#F2F2F2;
         width:100%;
-        height:450px;
-        border-radius:0px;            
+        height:28em;
+        border-radius:0em;            
     }
 
     .logement{
         width:100%;
         background:white;
-        margin-top:200px;
-        margin-top:380px;           
+        margin-top:25em;           
     }
 
     .bloc{
 
-        width:250px;
-        height:160px;
-        margin-bottom:20px;
-        margin-top:10px;
-        box-shadow: 0px 4px 2px 0px #999;
+        width:15em;
+        height:10em;
+        margin-bottom:1.2em;
+        margin-top:0.6em;
+        box-shadow: 0em 0.24em 0.12em 0em #999;
     }
 
 
 /*activites*/
 
     .zone_activity{
-     margin-top:400px;   
+     margin-top:25em;   
     }
 
     .entete_activites{
-        margin-left:150;   
+        margin-left:0em;   
     }
 
     #conteneur2{
-        width:300px;
-        height:850px;
+        width:18em;
+        height:51em;
         flex-direction: column;   
-        margin-left:auto;
-        margin-right:auto;
+        margin-left:0em;
+     
     }
 
     .element_1, .element_2, .element_3, .element_4, .element_5, .element_6{
-        width:250px;
-        height:120px;          
+        width:15em;
+        height:7em;          
     }
 
     .img_activites{
         width:100%;
         height:80%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;    
+        border-top-left-radius: 0.6em;
+        border-top-right-radius: 0.6em;    
     }
 
     .element_4{
-        margin-top:30px;
-        margin-bottom:30px;
+        margin-top:1.8em;
+        margin-bottom:1.8em;
     }
       
  /*pied de page*/
 
     footer{
-        width:300px;
-        height:350px;
+        width:18em;
+        height:21em;
         flex-direction:column;
-        margin-left:auto;
-        margin-right:auto; 
-        border-radius:0px;   
+        margin-left:0em; 
+        border-radius:0em;   
     }
 
     .info{
-        width:300px;
-        margin-bottom:0px;
-        margin-left:10px;
+        width:18em;
+        margin-bottom:0em;
+        margin-left:0.6em;
     }
 }
         
