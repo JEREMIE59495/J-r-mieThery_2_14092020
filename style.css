@@ -579,10 +579,9 @@
     }
     
     nav{
-        background:pink;
         width:auto;
         flex-direction:column; 
-        margin-top:3em;
+        margin-top:1em;
         float:none;
         margin-left:auto;
         margin-right:auto;
@@ -593,9 +592,9 @@
         margin-bottom:0.6em;
     }
 
-    .hh{
-       width:auto;
-      margin-left:60px;  
+    .position{
+        width:auto;
+        margin-left:60px;  
     }
 
   /*filtre*/               
