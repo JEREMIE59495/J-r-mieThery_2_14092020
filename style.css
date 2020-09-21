@@ -1,7 +1,7 @@
 /* structure de page partie pc*/
 
     body{
-    width:auto;    
+    width:100%;    
     }
     
     @font-face{
@@ -14,19 +14,21 @@
     .logo{
     width: 6em;
     height: 2.4em;
-    margin-left:0.6em;
+    margin-left:1em;
     margin-top:2em;
     }
     
     nav {
         float:right;
         margin-top:2em;
+       
     }
 
     .inscription{
         float:right;  
         margin-top:2em;
         margin-left:1.2em;  
+        margin-right:2em;
         color:#0065FC;
         font-weight:bold;
     }
@@ -49,40 +51,51 @@
         margin-left:1.2em;
         margin-right:1.2em;
     }
+
+    .titre, .recherche_ville,  .recherche_affinee, .info_complementaire{
+        margin-left:1.2em;
+    }
     
-    p,a,li,h2,h4,h5.placeholder{
+    p,a,li,h2,h4,h5, .placeholder{
         font-family:Raleway;
         color:black;
     }
 
+
  /* BARRE DE RECHERCHE POSITION*/
         
-    .search {   
-        width:16em;
-        height:1.44em;
+    .search { 
+        width:25em;
+        height:2em;
+        margin-bottom:1.5em;
      }
         
     .search .logo-position {
         display:block;
         background:#F2F2F2;
-        width:1.44em;
-        height:1.44em;
+        width:2em;
+        height:2em;
         float:left;
-        border-top-left-radius: 0.3em;
-        border-bottom-left-radius: 0.3em;
+        border-top-left-radius: 0.7em;
+        border-bottom-left-radius: 0.7em;
      }
     
     .logo-position .fas  {
-        margin-left: 0.36em;
-        margin-top:0.18em;  
+        margin-left: 0.9em;
+        margin-top:0.7em; 
+        font-size:0.8em; 
      }
+
     .search .btn-recherche {
         display:block;
         background:#0065FC;
-        width:6em;
-        height:1.75em;
-        border-top-right-radius: 0.3em;
-        border-bottom-right-radius: 0.3em;
+        width:7em;
+        height:2.2em;
+        border-top-right-radius: 0.7em;
+        border-bottom-right-radius: 0.7em;
+    }
+    .btn-recherche{
+        color:white;
     }
         
     .search input {  
@@ -91,13 +104,12 @@
      }
         
      .search input[type=text] {
-        text-shadow:1 0.06em #0065FC;
         float:left;
-        height:1.75em;
-        width:9.6em;
+        height:2.2em;
+        width:17em;
         line-height:1.5em;
-        color:#666;
-        margin:0
+        font-weight: bold;
+        margin-left:0.5em;
     }
     
 /*====================== filtres======================*/
@@ -109,25 +121,30 @@
     }
     
     .filtre{
+        width:auto;
+        background:white;
         display:flex;
+        margin-top:1em;
+        margin-bottom:1em;
     
     }
     .texte{
+        font-weight: bold;
+        font-size:1em;
         height:1.44em;
     }
     .texte1{
-        margin-top:0.18em;
+        margin-top:0.4em;
         margin-right:1.2em;
     }
     
     .eco, .famillial, .romantique, .animaux {
         display:flex;
-        height:1.44em;
+        height:2em;
         margin-left:1.2em;
     }
     
-    .envoi{
-        
+    .envoi{   
         display:none;
     }
   
@@ -140,10 +157,10 @@
     .eco-family{
         display:flex;
     }
+
     .eco {
-    
         width:9em;
-        height:1.44em;
+        height:2em;
         border: solid 0.06em  grey;
         border-radius:1.2em;
         margin-left:0.6em;
@@ -152,25 +169,25 @@
       
     .logo-eco { 
         background:#DEEBFF;
-        width:1.44em;
-        height:1.44em;
+        width:2em;
+        height:2em;
         float:left;
         border-radius: 1.2em;
         border-bottom-left-radius: 1.2em;
     }
             
     .logo-eco .fas {
-        font-size:0.6em;
-        margin-left:0.5em;
-        margin-top:0.6em;       
+        font-size:0.8em;
+        margin-left:0.6em;
+        margin-top:0.8em;       
         color:#0065FC;        
     }
     
     .texte_eco {
-        width:9em;         
-        height:1.7em;
-        border-top-right-radius:0.6em;
-        border-bottom-right-radius:0.6em;
+        width:8em;         
+        height:2.2em;
+        border-top-right-radius:1.2em;
+        border-bottom-right-radius:1.2em;
         border:0;
         text-align:center;  
     }
@@ -181,7 +198,7 @@
         display:flex;
         flex-wrap:wrap;
         width:9em;
-        height:1.44em;
+        height:2em;
         border: solid 0.06em  grey;
         border-radius:1.2em;
         margin-left:0.6em;
@@ -190,8 +207,8 @@
     
     .logo-famillial {    
         background:#DEEBFF;
-        width:1.44em;
-        height:1.44em;
+        width:2em;
+        height:2em;
         float:left;
         border-radius:1.2em;
         border-bottom-left-radius:1.2em;
@@ -199,16 +216,16 @@
     
      .logo-famillial .fas  {
         font-size:0.8em;
-        margin-left:0.5em;
-        margin-top:0.4em;       
+        margin-left:0.8em;
+        margin-top:0.8em;       
         color:#0065FC;        
     }
     
     .texte_famillial {  
-        width:9em;
-        height:1.7em;
-        border-top-right-radius:0.6em;
-        border-bottom-right-radius:0.6em;
+        width:8em;
+        height:2.2em;
+        border-top-right-radius:1.2em;
+        border-bottom-right-radius:1.2em;
         border:0;
         text-align:center;          
     } 
@@ -216,8 +233,8 @@
 /* Onglet Romantique*/
             
     .romantique {
-        width:8em;
-        height:1.44em;
+        width:9em;
+        height:2em;
         border: solid 0.06em grey;
         border-radius:1.2em;
         margin-left:0.6em;
@@ -226,25 +243,25 @@
            
     .logo-romantique {  
         background:#DEEBFF;
-        width:1.44em;
-        height:1.44em;
+        width:2em;
+        height:2em;
         float:left;
         border-radius:1.2em;
         border-bottom-left-radius:1.2em;
     }
           
     .logo-romantique .fas  {
-        font-size:0.7em;
-        margin-left:0.5em;
-        margin-top:0.5em;       
+        font-size:0.9em;
+        margin-left:0.6em;
+        margin-top:0.6em;       
         color:#0065FC;        
     }
          
     .texte_romantique {
-        width:7.8em;
-        height:1.75em;
-        border-top-right-radius:0.6em;
-        border-bottom-right-radius:0.6em;
+        width:8em;
+        height:2.2em;
+        border-top-right-radius:1.2em;
+        border-bottom-right-radius:1.2em;
         border:0;
         text-align:center;
     }
@@ -252,8 +269,8 @@
 /* Onglet Animaux*/
             
     .animaux{
-        width:9.24em;
-        height:1.44em;
+        width:11.5em;
+        height:2em;
         border: solid 0.06em  grey;
         border-radius:1.2em;
         margin-left:0.6em;
@@ -262,25 +279,25 @@
     
     .logo-animaux {
         background:#DEEBFF;
-        width:1.44em;
-        height:1.44em;
+        width:2em;
+        height:2em;
         float:left;
         border-radius:1.2em;
         border-bottom-left-radius:1.2em;
     }
     
     .logo-animaux .fas {  
-        font-size:0.8em;
-        margin-left:0.24em;
-        margin-top:0.24em;       
+        font-size:1em;
+        margin-left:0.4em;
+        margin-top:0.3em;       
         color:#0065FC;        
     }
     
     .texte_animaux {
-        width:9.25em;
-        height:1.7em;
-        border-top-right-radius:0.6em;
-        border-bottom-right-radius:0.6em;
+        width:11.1em;
+        height:2.2em;
+        border-top-right-radius:1.2em;
+        border-bottom-right-radius:1.2em;
         border:0;
         text-align:center;
     }
@@ -298,22 +315,27 @@
     .info_complementaire {
      display:flex;
      flex-wrap:wrap;
-     margin-top:0px;
+     position:relative;
+     margin-top:2em;
+     margin-bottom:2em;
      width:100%;
      height:1.2em;  
     }
          
-    .logo-info .fas {
+    .logo-info i {
+        position:absolute;
+        color: #0065FC;
         font-size:0.52em;
-        margin-left:0.5em;
-        margin-top:0.15em;       
-        color:#0065FC;        
+        margin-left:0.6em;
+        margin-top:0.2em;
+        vertical-align: super;        
     }
 
     .texte-info{
+        position:absolute;
         margin-top:0em;
-        margin-left:0.6em;
-        font-size:0.7em;
+        margin-left:2em;
+        font-size:1em;
     }
 
 /*====================== zone hebergement======================*/
@@ -328,8 +350,9 @@
     
     #conteneur1{
         display:flex;
-        width:100%;
         height:30em;
+        margin-left:1.2em;
+        margin-right:2em;
         border-radius:1em;    
     }    
 
@@ -352,8 +375,8 @@
         align-content:start;
         justify-content:space-around;
         background:#F2F2F2;
-        width:70%;
-        height:37em;
+        width:65%;
+        height:35em;
         border-radius:1em;
         margin-right:2em;
         padding:1em 1em 0em 1em ;
@@ -361,8 +384,8 @@
     
     .bloc{
         background:white;
-        width:15.2em;
-        height:12.5em;
+        width:15em;
+        height:11.5em;
         border-radius:1em;
         margin-bottom:2em
     } 
@@ -407,6 +430,7 @@
         width:4em; 
         font-size:1em;
         margin-left:0em;
+        margin-right:-3em;
         color:#F2F2F2;
     }
   
@@ -424,7 +448,7 @@
         flex-direction:column;  
         background:#F2F2F2;
         width:30%;
-        height:38em;
+        height:36em;
         border-radius:1em;
         padding-left:0.5em;
         padding-right:0.5em;
@@ -448,7 +472,7 @@
         height:8.5em;
         border-radius:0.6em;
         margin:auto;  
-        margin-bottom:2.2em; 
+        margin-bottom:1.6em; 
     } 
     
     .img_populaire{
@@ -478,17 +502,23 @@
     #conteneur2{
         display:flex;
         justify-content: space-between;
-        width:99%;
         height:27.7em;
         margin-top:1em;
+        margin-left:1.2em;
+        margin-right:2em;
     }
 
     .zone_activity{
         width:100%;
         height:1.2em;  
         margin-top:10em; 
+        margin-left:1.2em;
+        position:relative;
     }
-   
+
+    h6{
+        display:none;
+    }
     .box{  
         width:17em;
         height:27.7em;
@@ -498,7 +528,6 @@
     
     .element_1, .element_4{
         width:100%;
-      
         background:white;
         height:27.7em;
         position:relative;
@@ -538,15 +567,16 @@
     
     .img_activites2{
         width:100%;
-        height:100%;
+        height: 100%;
         object-fit: cover;
-        margin:auto;
+        position:absolute;
         border-radius:1em;
+        z-index:1;
     }
 
     .titre_activites2{
         position:absolute;
-        margin-top:-3em; 
+        margin-top:11.8em; 
         width:100%; 
         height:3em; 
         z-index:2;
@@ -623,10 +653,11 @@
 
     footer{
         display:flex;
-        width: 100%;
         height:8em;
         background:#F2F2F2;
         margin-top:1.8em;
+        margin-left:1.2em;
+        margin-right:2em;
         border-radius:0.6em;   
     }
     
@@ -638,7 +669,7 @@
         margin-top:0em;
     }
     
-    li{
+    .info a{
         font-size: 0.7em;
         list-style-type: none;
         margin-bottom:0.3em;
@@ -681,6 +712,7 @@
         width:auto;
         flex-direction:column; 
         margin-top:1em;
+        margin-left:1.5em;
         float:none;
     }
 
@@ -723,22 +755,33 @@
         width:auto;              
         display:flex;           
         flex-direction:column;    
-        margin-left:auto;
-        margin-right:auto;        
+        margin-left:0em;
+        margin-right:0em;      
     }
-
-    .eco-family, .romantique{
-        margin-bottom:0.4em;
+ .recherche_affinee{
+     margin-left:0em;
+     margin-right:0em;
+ }
+    .texte, .eco-family, .romantique{
+        margin-bottom:0.5em;
     }
+  
+    .info_complementaire{
+    margin-top:2em;
+    margin-left:0.5em;
+    font-size:1em;
 
+    }
 
 /* hebergement*/
 
 
     #conteneur1{
         width:100%;
-        margin-top:46em;
-        flex-direction: column-reverse;    
+        margin-top:44em;
+        flex-direction: column-reverse;  
+        margin-left:0em;
+    
     }
 
     .entete_hebergement, .pied_hebergement{  
@@ -760,7 +803,6 @@
     }
 
     .bloc{
-        width:98%;
         margin-right:2em;
         height:12em;
         margin-bottom:1.2em;
@@ -784,9 +826,10 @@
         height:57em;
         flex-direction: column;   
         margin-left:0em;
+        margin-right:0em;
     }
 
-    .element_1, .element_2, .element_3, .element_4, .element_5, .element_6{
+    .element_1, .element_2 , .element_3, .element_4, .element_5, .element_6{
         width:20em;
         height:12em;  
         margin-left:1em; 
@@ -800,10 +843,11 @@
         border-top-right-radius: 0.6em;    
     }
 
-    .titre_activites, .titre_activites3, .titre_activites5{
+    .titre_activites, .titre_activites2, .titre_activites3, .titre_activites5{
         margin-top:9em;
     }
 
+    
     .element_4{
         margin-top:1.8em;
         margin-bottom:1.8em;
@@ -813,7 +857,7 @@
 
     footer{
         margin-top:28em;
-        width:22.5em;
+        width:26em;
         height:21em;
         flex-direction:column;
         margin-left:0em; 
