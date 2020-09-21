@@ -329,43 +329,52 @@
     #conteneur1{
         display:flex;
         width:100%;
-        height:24em;
-        border-radius:0.6em;    
+        height:30em;
+        border-radius:1em;    
     }    
 
-    .entete_hebergement, .pied_hebergement{  
+    .entete_hebergement{ 
         width:96%;
-        height:0.3em;
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    .pied_hebergement{  
+        width:96%;
+        font-weight:bold;
+        font-size:1em;
         list-style-type: none;
+        margin-top:0em;
     }
     
     .logement{
         display:flex;
         flex-wrap:wrap;
-        justify-content:space-around ;
-        align-content:space-around;
+        align-content:start;
+        justify-content:space-around;
         background:#F2F2F2;
-        width:80%;
-        height:28em;
-        border-radius:0.6em;
-        margin-right:2%;
+        width:70%;
+        height:37em;
+        border-radius:1em;
+        margin-right:2em;
+        padding:1em 1em 0em 1em ;
     }  
     
     .bloc{
         background:white;
-        width:30%;
-        height:10em;
-        border-radius:0.6em;
-        margin:0em;
+        width:15.2em;
+        height:12.5em;
+        border-radius:1em;
+        margin-bottom:2em
     } 
     
     .img_hebergement{
         width:96%;
-        height:70%;
+        height:60%;
+        object-fit: cover;
         margin-left:0.24em;
         margin-top: 0.24em;
-        border-top-left-radius:0.6em;
-        border-top-right-radius:0.6em;    
+        border-top-left-radius:1em;
+        border-top-right-radius:1em;    
     }
 
     .description{
@@ -381,17 +390,17 @@
     }
     
     .description p{
-        
-        font-size:0.6em;
+        line-height:1.5em;
+        font-size:0.7em;
         margin:0em;
-        margin-left:0.6em;
+        margin-left:1em;
+        margin-bottom:0.3em;
     }
+    .bloc h5{
+        margin-top:0.5em;
+        margin-bottom:0.5em;
+        margin-left:0.8em;
 
-    h5{
-      
-       text-align:left;
-       width:100%;
-        margin:0em;
     }
     
     em {
@@ -400,7 +409,10 @@
         margin-left:0em;
         color:#F2F2F2;
     }
-    
+  
+    .bloc_image{
+        width:100%;
+    }
 /* zone populaire*/
     
     .populaire{
@@ -409,12 +421,16 @@
         flex-direction:column;  
         background:#F2F2F2;
         width:30%;
-        height:28em;
-        border-radius:0.6em;
+        height:38em;
+        border-radius:1em;
+        padding-left:0.5em;
+        padding-right:0.5em;
     }
     
     .entete_populaire{
-        margin-left:1.8em;
+        margin:2em 0em 1em 1.8em;
+        font-weight:bold;
+        font-size:1.3em;
     }
     
     .entete_populaire i{
@@ -425,112 +441,176 @@
     .element {
         display:flex;
         background:white;
-        width:80%;
-        height:6em;
+        width:90%;
+        height:8.5em;
         border-radius:0.6em;
         margin:auto;  
-        margin-bottom:1.8em; 
+        margin-bottom:2.2em; 
     } 
     
     .img_populaire{
-        width:45%;
-        height:92%;
+        width:42%;
+        height:7.5em;
         margin-left:0.4em;
         margin-top:0.24em;
-        border-top-left-radius:0.6;
+        border-top-left-radius:0.6em ;
         border-bottom-left-radius:0.6em; 
     }
+   .element h5{
+       margin-left:1em;
+       margin-top:1em;
+       margin-bottom:0.5em;
+       white-space: normal;
+   }
+   .element i {
+       margin-top:2em;
+
+   }
     
 
 /*====================== zone activités ======================*/
 
     #conteneur2{
         display:flex;
-        width:96%;
-        height:15empx;
+        justify-content: space-between;
+        width:99%;
+        height:27.7em;
         margin-top:1em;
-        border-radius:0.6em;
-        padding-left:1.8em;
     }
 
     .zone_activity{
         width:100%;
         height:1.2em;  
-        margin-top:5em; 
+        margin-top:10em; 
     }
    
     .box{  
-        width:22%;
-        height:15em;
-        margin-right:1.8em;
+        width:17em;
+        height:27.7em;
+        margin-right:0em;
         padding-top:0em;
-        border-radius:0.6em;
+    
     }
     
     .element_1, .element_4{
+        width:100%;
         background:white;
-        height:15em;
-        border-radius:0.6em;
-        margin-top:0em;
+        height:27.7em;
+        position:relative;
+        border-radius:1em;
         box-shadow: 0em 0.24em 0.12em 0em #999;
     }  
     
     .img_activites{
         width:100%;
-        height:90%;
-        border-top-left-radius:0.6em;
-        border-top-right-radius:0.6em;    
+        height:100%;
+        object-fit: cover;
+        position:absolute;
+        border-radius:1em;
+        z-index:1;
+    }
+
+    .titre_activites{
+        position:absolute;
+        margin-top:24.7em; 
+        width:100%; 
+        height:3em; 
+        z-index:2;
+        font-size:100%;
+        background:white;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
     }
     
     .element_2{
         background:white;
-        height:9em;
-        border-radius:0.6em;
-        margin-bottom:1.2em;  
+        height:14.8em;
+        border-radius:1em;
+        position:relative;
+        margin-bottom:3em; 
         box-shadow: 0em 0.24em 0.12em 0em #999; 
     }
     
     .img_activites2{
         width:100%;
-        height:80%;
+        height:100%;
+        object-fit: cover;
         margin:auto;
-        border-top-left-radius:0.6em;
-        border-top-right-radius:0.6em; 
+        border-radius:1em;
+
     }
+    .titre_activites2{
+        position:absolute;
+        margin-top:-3em; 
+        width:100%; 
+        height:3em; 
+        z-index:2;
+        font-size:100%;
+        background:white;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        }
     
     .element_3{
         background:white;
-        border-radius:0.6em;
-        height:5em;
+        border-radius:1em;
+        position:relative;
+        height:10em;
         box-shadow: 0em 0.24em 0.12em 0em #999;
     }
     
     .img_activites3{
         width:100%;
-        height: 70%;
-        margin:0em;
-        border-top-left-radius:0.6em;
-        border-top-right-radius:0.6em; 
+        height: 100%;
+        object-fit: cover;
+        position:absolute;
+        border-radius:1em;
+        z-index:1;
     }
-    
-    .element_5, .element_6{
+   
+        .titre_activites3{
+        position:absolute;
+        margin-top:7em; 
+        width:100%; 
+        height:3em; 
+        z-index:2;
+        font-size:100%;
         background:white;
-        height:6.5em;
-        border-radius:0.6em;
-        margin-bottom:1.8em;  
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        }
+
+    .element_5, .element_6{
+        height:12.4em;
+        position:relative;
+        border-radius:1em;
+        margin-bottom:3em;  
         box-shadow: 0em 0.24em 0.12em 0em #999; 
     }
     
     .img_activites5{
         width:100%;
-        height:78%;
+        height:100%;
+
+        position:absolute;
         margin:0em;
-        border-top-left-radius:0.6em;
-        border-top-right-radius:0.6em; 
+        border-radius:1em;
     }
-    
-    h5{
-    margin-top:0.3em;
+
+    .titre_activites5{
+        position:absolute;
+        margin-top:9.5em; 
+        width:100%; 
+        height:3em; 
+        z-index:2;
+        font-size:100%;
+        background:white;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        }
+       
+   .box h5{
+    margin-top:1em;
     margin-left:0.6em;
     }
     
@@ -569,14 +649,13 @@
 
     body{
         width:auto;
-        margin-left:1em;
-        margin-right:1em;
+        margin-left:0em;
+        margin-right:0em;
     }
-
-    p,li,h2,h4,h5.placeholder{
+ 
+    p,li,h2,h4,h5, .placeholder{
         font-family:Raleway;
-        color:black;
-        font-weight:bold;
+        color:black;   
     }
    
 /*header*/  
@@ -584,7 +663,7 @@
     header{
         flex-direction:column;
         width:auto;
-        margin-left:auto;
+        margin-left:1em;
         margin-right:auto;
     }
 
@@ -653,10 +732,9 @@
 
 
     #conteneur1{
-        width:18em;
-        margin-top:56em;
+        width:100%;
+        margin-top:46em;
         flex-direction: column-reverse;    
-        margin-left:0em;  
     }
 
     .entete_hebergement, .pied_hebergement{  
@@ -665,23 +743,22 @@
     }
 
     .populaire {      
-
         background:#F2F2F2;
         width:100%;
-        height:28em;
+        height:38em;
         border-radius:0em;            
     }
 
     .logement{
         width:100%;
         background:white;
-        margin-top:25em;           
+        margin-top:0em;           
     }
 
     .bloc{
-
-        width:15em;
-        height:10em;
+        width:98%;
+        margin-right:2em;
+        height:12em;
         margin-bottom:1.2em;
         margin-top:0.6em;
         box-shadow: 0em 0.24em 0.12em 0em #999;
@@ -691,23 +768,25 @@
 /*activites*/
 
     .zone_activity{
-     margin-top:25em;   
+     margin-top:54em;   
     }
 
     .entete_activites{
-        margin-left:0em;   
+        margin-left:1em;  
     }
 
     #conteneur2{
         width:18em;
-        height:51em;
+        height:57em;
         flex-direction: column;   
         margin-left:0em;
     }
 
     .element_1, .element_2, .element_3, .element_4, .element_5, .element_6{
-        width:15em;
-        height:7em;          
+        width:20em;
+        height:12em;  
+        margin-left:1em; 
+        margin-bottom:2em;       
     }
 
     .img_activites{
@@ -725,7 +804,8 @@
  /*pied de page*/
 
     footer{
-        width:18em;
+        margin-top:28em;
+        width:22.5em;
         height:21em;
         flex-direction:column;
         margin-left:0em; 
@@ -735,7 +815,7 @@
     .info{
         width:18em;
         margin-bottom:0em;
-        margin-left:0.6em;
+        margin-left:2em;
     }    
 }
         
