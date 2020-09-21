@@ -396,11 +396,11 @@
         margin-left:1em;
         margin-bottom:0.3em;
     }
+
     .bloc h5{
         margin-top:0.5em;
         margin-bottom:0.5em;
         margin-left:0.8em;
-
     }
     
     em {
@@ -413,8 +413,11 @@
     .bloc_image{
         width:100%;
     }
+
+
 /* zone populaire*/
     
+
     .populaire{
         display:flex;
         flex-wrap:wrap;
@@ -451,20 +454,22 @@
     .img_populaire{
         width:42%;
         height:7.5em;
+        object-fit: cover;
         margin-left:0.4em;
-        margin-top:0.24em;
+        margin-top:0.4em;
         border-top-left-radius:0.6em ;
         border-bottom-left-radius:0.6em; 
     }
+
    .element h5{
        margin-left:1em;
        margin-top:1em;
        margin-bottom:0.5em;
        white-space: normal;
    }
+
    .element i {
        margin-top:2em;
-
    }
     
 
@@ -489,11 +494,11 @@
         height:27.7em;
         margin-right:0em;
         padding-top:0em;
-    
     }
     
     .element_1, .element_4{
         width:100%;
+      
         background:white;
         height:27.7em;
         position:relative;
@@ -537,8 +542,8 @@
         object-fit: cover;
         margin:auto;
         border-radius:1em;
-
     }
+
     .titre_activites2{
         position:absolute;
         margin-top:-3em; 
@@ -549,7 +554,7 @@
         background:white;
         border-bottom-left-radius: 1em;
         border-bottom-right-radius: 1em;
-        }
+     }
     
     .element_3{
         background:white;
@@ -591,7 +596,6 @@
     .img_activites5{
         width:100%;
         height:100%;
-
         position:absolute;
         margin:0em;
         border-radius:1em;
@@ -607,7 +611,7 @@
         background:white;
         border-bottom-left-radius: 1em;
         border-bottom-right-radius: 1em;
-        }
+    }
        
    .box h5{
     margin-top:1em;
@@ -791,9 +795,13 @@
 
     .img_activites{
         width:100%;
-        height:80%;
+        height:100%;
         border-top-left-radius: 0.6em;
         border-top-right-radius: 0.6em;    
+    }
+
+    .titre_activites, .titre_activites3, .titre_activites5{
+        margin-top:9em;
     }
 
     .element_4{
