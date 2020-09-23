@@ -12,7 +12,6 @@
     @font-face{
         font-family:'Raleway';
         src:url('Fonts/Raleway-regular.ttf');
-
     }
     
     .logo{
@@ -35,14 +34,14 @@
         color:#0065FC;
         font-weight:bold;
     }
+
 /*ancre*/
 
     nav a{
         margin-top:0em;
         padding: 0em 0.6em 0em 0.6em;
         color:black;
-        font-size:1em; 
-      
+        font-size:1em;  
     }
 
     nav a:hover{
@@ -60,6 +59,7 @@
     .titre, .recherche_ville,  .recherche_affinee, .info_complementaire{
         margin-left:1.2em;
     }
+
 /*police de caractère*/ 
 
     p,li,h2,h4,h5, .pied_hebergement{
@@ -335,7 +335,7 @@
 
  /* barre info sur les disponibilitées*/
 
-      .logo-info{
+    .logo-info{
         border: solid 0.06em  grey;
         width:0.8em;
         height:0.8em;
@@ -344,13 +344,13 @@
     }
 
     .info_complementaire {
-     display:flex;
-     flex-wrap:wrap;
-     position:relative;
-     margin-top:2em;
-     margin-bottom:2em;
-     width:100%;
-     height:1.2em;  
+        display:flex;
+        flex-wrap:wrap;
+        position:relative;
+        margin-top:2em;
+        margin-bottom:2em;
+        width:100%;
+        height:1.2em;  
     }
          
     .logo-info i {
@@ -518,9 +518,7 @@
     }
 
    .element h5{
-       margin-left:1em;
-       margin-top:1em;
-       margin-bottom:0.5em;
+       margin:1em 0em 0.5em 1em;
        white-space: normal;
    }
 
@@ -543,8 +541,7 @@
     .zone_activity{
         width:100%;
         height:1.2em;  
-        margin-top:10em; 
-        margin-left:1em;
+        margin:10em 0em 2em 1em;  
         position:relative;
     }
 
@@ -678,6 +675,8 @@
    .box h5{
     margin-top:1em;
     margin-left:0.6em;
+    font-size:0.9em;
+    font-family:Raleway-bold;
     }
     
 
@@ -839,6 +838,10 @@
         margin-right:auto;
     }
 
+    .pied_hebergement{
+        margin-left:1em;
+    }
+
     .populaire {      
         background:#F2F2F2;
         width:100%;
@@ -853,9 +856,11 @@
     }
 
     .bloc{
-        margin-right:2em;
+        width:100%;
         height:12em;
+        margin-left:1em;
         margin-bottom:1.2em;
+        margin-right:1em;
         margin-top:0.6em;
         box-shadow: 0em 0.24em 0.12em 0em #999;
     }
@@ -872,15 +877,15 @@
     }
 
     #conteneur2{
-        width:18em;
+        width:100%;
         height:57em;
         flex-direction: column;   
-        margin-left:0em;
+        margin-left:1em;
         margin-right:0em;
     }
 
     .element_1, .element_2 , .element_3, .element_4, .element_5, .element_6{
-        width:20em;
+        width:120%;
         height:12em;  
         margin-left:1em; 
         margin-bottom:2em;       
