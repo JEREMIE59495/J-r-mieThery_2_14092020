@@ -1,19 +1,9 @@
 /* structure de page partie pc*/
 
     body{
-    width:100%;    
-    }
-    
-    @font-face{
-        font-family:'Raleway-bold';
-        src:url('Fonts/Raleway-bold.ttf');
+    width:100%; 
     }
 
-    @font-face{
-        font-family:'Raleway';
-        src:url('Fonts/Raleway-regular.ttf');
-    }
-    
     .logo{
     width: 6em;
     height: 2.4em;
@@ -62,19 +52,19 @@
 
 /*police de caractère*/ 
 
-    p,li,h2,h4,h5, .pied_hebergement{
-        font-family:Raleway-bold;
+    p,li,h2, h4,h5, .pied_hebergement{
+        font-family: 'Raleway Bold',arial;
         color:black;
     }
 
     p, a{
-        font-family:Raleway;
+        font-family:'Raleway bold', arial;
         color:black;
     }
 
-    input::placeholder{
-        color:black;
-        font-family:Raleway-bold;
+    .titre h2{
+        background: chocolate;
+       line-height: 0em;
     }
 
  /* BARRE DE RECHERCHE POSITION*/
@@ -135,11 +125,15 @@
         
     .search input[type=text] {
         float:left;
+        font-size:0.85em;
         height:3em;
         width:17em;
         line-height:1.5em;
         font-weight: bold;
-        margin-left:0em;
+    }
+
+    input::placeholder{
+        color:black;
     }
     
     
@@ -182,6 +176,13 @@
     input:hover{
         background-color:#999;
     }
+
+    .eco input[type=text] ,.familial input[type=text],.romantique input[type=text],.animaux input[type=text]{
+        font-family:'Raleway Bold',arial ;
+        font-weight: bolder;
+        font-size: 0.85em;
+        color:red;
+    }
     
 /*Onglet economique*/
 
@@ -220,15 +221,15 @@
         border-top-right-radius:1.2em;
         border-bottom-right-radius:1.2em;
         border:0;
-        text-align:center;  
+        text-align:center;
     }
         
  /* Onglet famille*/
     
-    .famillial {
+    .familial {
         display:flex;
         flex-wrap:wrap;
-        width:9em;
+        width:7.5em;
         height:2em;
         border: solid 0.06em  grey;
         border-radius:1.2em;
@@ -236,7 +237,7 @@
         margin-right:0.6em;
     }
     
-    .logo-famillial {    
+    .logo-familial {    
         background:#DEEBFF;
         width:2em;
         height:2em;
@@ -245,21 +246,22 @@
         border-bottom-left-radius:1.2em;
      }
     
-     .logo-famillial .fas  {
-        font-size:0.8em;
-        margin-left:0.8em;
-        margin-top:0.8em;       
+     .logo-familial .fas  {
+        font-size:0.9em;
+        margin-left:0.7em;
+        margin-top:0.6em;       
         color:#0065FC;        
     }
     
-    .texte_famillial {  
-        width:8em;
+    .texte_familial {  
+        width:6.15em;
         height:2.2em;
         border-top-right-radius:1.2em;
         border-bottom-right-radius:1.2em;
         border:0;
-        text-align:center;          
+        text-align:center;        
     } 
+  
 
 /* Onglet Romantique*/
             
@@ -337,8 +339,8 @@
 
     .logo-info{
         border: solid 0.06em  grey;
-        width:0.8em;
-        height:0.8em;
+        width:1.1em;
+        height:1.1em;
         border-radius:0.6em;
         float:left;   
     }
@@ -356,9 +358,9 @@
     .logo-info i {
         position:absolute;
         color: #0065FC;
-        font-size:0.52em;
-        margin-left:0.6em;
-        margin-top:0.2em;
+        font-size:0.6em;
+        margin-left:0.7em;
+        margin-top:0.4em;
         vertical-align: super;        
     }
 
@@ -456,13 +458,15 @@
         margin-top:0.5em;
         margin-bottom:0.5em;
         margin-left:0.8em;
+        font-family: 'Raleway Bold',arial;
+        line-height: 0.5em;
     }
     
-    em {
-        width:4em; 
-        font-size:1em;
-        margin-left:0em;
-        margin-right:-3em;
+   .satisfaction i:nth-child(5) {
+     color:#F2F2F2;
+    }
+
+    .satisfaction_1 i:nth-child(n+4){
         color:#F2F2F2;
     }
   
@@ -534,8 +538,8 @@
         justify-content: space-between;
         height:27.7em;
         margin-top:1em;
-        margin-left:1.2em;
-        margin-right:2em;
+        margin-left:1.5em;
+        margin-right:3em;
     }
 
     .zone_activity{
@@ -561,7 +565,7 @@
         height:27.7em;
         position:relative;
         border-radius:1em;
-        box-shadow: 0em 0.24em 0.12em 0em #999;
+        box-shadow: 0em 0.4em 2em rgb(216, 216, 216); 
     }  
     
     .img_activites{
@@ -591,7 +595,7 @@
         border-radius:1em;
         position:relative;
         margin-bottom:3em; 
-        box-shadow: 0em 0.24em 0.12em 0em #999; 
+        box-shadow: 0em 0.2em 3em rgb(216, 216, 216); 
     }
     
     .img_activites2{
@@ -620,7 +624,7 @@
         border-radius:1em;
         position:relative;
         height:10em;
-        box-shadow: 0em 0.24em 0.12em 0em #999;
+        box-shadow: 0em 0.2em 3em rgb(216, 216, 216); 
     }
     
     .img_activites3{
@@ -649,7 +653,7 @@
         position:relative;
         border-radius:1em;
         margin-bottom:3em;  
-        box-shadow: 0em 0.24em 0.12em 0em #999; 
+        box-shadow: 0em 0.2em 3em rgb(216, 216, 216); 
     }
     
     .img_activites5{
@@ -674,36 +678,55 @@
        
    .box h5{
     margin-top:1em;
-    margin-left:0.6em;
-    font-size:0.9em;
-    font-family:Raleway-bold;
+    margin-left:1.2em;
+    font-size:1em;
+    font-family:'Raleway Bold', arial;
     }
     
 
     /*====================== pied de page ======================*/
 
     footer{
+        width:100%;
         display:flex;
-        height:8em;
+        height:10em;
         background:#F2F2F2;
         margin-top:1.8em;
-        margin-left:1.2em;
-        margin-right:2em;
-        border-radius:0.6em;   
+        margin-left:-5;
+        padding-top:2em;
     }
     
-    .info{
+    .propos{
         text-align:left;
-        width:20%;
+        width:15%;
         height:9em;
-        margin-left:7em;
+        margin-left:2em;
+        margin-right:12em;
         margin-top:0em;
+        line-height: 0em;
+    }
+    .nos_hebergements{
+        text-align:left;
+        width:15%;
+        height:9em;
+        margin-left:2em;
+        margin-right:10em;
+        margin-top:0em;
+        line-height: 0em;
+    }
+    .assistance{
+        text-align:left;
+        width:15%;
+        height:9em;
+        line-height: 0em;
     }
     
-    .info a{
-        font-size: 0.7em;
+    .propos a, .nos_hebergements a, .assistance a{
+        font-family:Raleway;
+        font-size: 0.85em;
         list-style-type: none;
-        margin-bottom:0.3em;
+        margin-bottom:1em;
+        line-height: 2em;
     }
 /*====================== mode responsive ======================*/
 
@@ -717,6 +740,7 @@
         width:auto;
         margin-left:0em;
         margin-right:0em;
+        text-align: center;
     }
  
   
@@ -830,7 +854,7 @@
         width:100%;
         margin-top:44em;
         flex-direction: column-reverse;  
-        margin-left:0em;
+        margin-left:0em;  
     }
 
     .entete_hebergement, .pied_hebergement{  
@@ -850,7 +874,7 @@
     }
 
     .logement{
-        width:100%;
+        width:20em;
         background:white;
         margin-top:0em;           
     }
