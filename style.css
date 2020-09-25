@@ -548,7 +548,7 @@
         justify-content: space-between;
         height:27.7em;
         margin:1em 2em 0em 0em;
-        padding:0em 1.5em 0em 1em;
+        padding:0em 1.5em 0em 1.5em;
     }
 
     .zone_activity{
@@ -558,15 +558,12 @@
         position:relative;
     }
 
-    h6{
-        display:none;
-    }
-
     .box{  
         width:17em;
         height:27.7em;
         padding:0em;
-        margin-left:2em; 
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .element_1, .element_4{
@@ -884,7 +881,7 @@
 
     .populaire {      
         background:#F2F2F2;
-        width:24em;
+        width:21em;
         height:38em;
         margin-left:auto;
         margin-right:auto;
@@ -893,7 +890,7 @@
     }
 
     .logement{
-        width:23em;
+        width:20em;
         height:0em;
         background:white;
         margin-top:0em; 
@@ -928,11 +925,19 @@
         border-radius: 5em;
         display:flex;
         flex-direction: column;
-        padding:0em ;
+        padding:0;
+        margin-left:auto;
+        margin-left:auto;
     }
-
+    
+    .box{
+        width:18em;
+        height:27.7em;
+        margin-left:auto;
+        margin-left:auto;
+    }
     .element_1, .element_2 , .element_3, .element_4, .element_5, .element_6{
-        width:21em;
+        width:18em;
         height:12em;   
         margin-top:1.2em;     
         margin-left: auto;
