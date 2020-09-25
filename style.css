@@ -55,19 +55,24 @@
         color:black;
     }
 
-    p, a{
+    a{
         font-family:'Raleway';
         color:black;
     }
+    
 
     .titre h2{
+        font-size:1.3em;
        line-height: 0em;
+    }
+    .titre p, .texte-info{
+        font-size:0.95em;
     }
 
  /* BARRE DE RECHERCHE POSITION*/
         
     .search { 
-        width:25em;
+        width:28em;
         height:2.9em;
         margin-bottom:1.5em;
      }
@@ -75,15 +80,15 @@
     .search .logo-position {
         display:block;
         background:#F2F2F2;
-        width:2.6em;
-        height:2.6em;
+        width:3em;
+        height:2.9em;
         float:left;
         border-top-left-radius: 0.7em;
         border-bottom-left-radius: 0.7em;
      }
     
     .logo-position .fas  {
-        margin-left: 1em;
+        margin-left: 1.2em;
         margin-top:1em; 
         font-size:0.95em; 
      }
@@ -91,8 +96,10 @@
     .search .btn-recherche {   
         display:block;
         background:#0065FC;
-        width:7em;
-        height:3em;
+        font-size:1em;
+        font-weight: bold;
+        width:7.5em;
+        height:2.9em;
         border-top-right-radius: 0.7em;
         border-bottom-right-radius: 0.7em;
     }
@@ -105,9 +112,10 @@
         display:none;
         background:#0065FC;
         width:3em;
-        height:3em;
+        height:3.2em;
         border-radius: 1em;
-        border:0 none;
+        border:0;
+        outline:0;
     }
 
     .bouton .fas{
@@ -117,16 +125,18 @@
         
     .search input {  
         outline:0;
-        border:0
+        border:0;
+        border-top:0.1px solid rgb(240, 239, 239);
+        border-bottom:0.1px solid rgb(240, 239, 239);
      }
         
     .search input[type=text] {
         float:left;
-        font-size:0.85em;
-        height:3em;
-        width:17em;
+        font-size:0.9em;
+        height:2.9em;
+        width:14.5em;
         line-height:1.5em;
-        font-weight: bold;
+        font-weight: bold; 
     }
 
     input::placeholder{
@@ -144,7 +154,6 @@
     
     .filtre{
         width:auto;
-        background:white;
         display:flex;
         margin-top:1em;
         margin-bottom:1em;
@@ -173,13 +182,14 @@
   
     input:hover{
         background-color:#999;
+        opacity:0.1;
     }
 
     .eco input[type=text] ,.familial input[type=text],.romantique input[type=text],.animaux input[type=text]{
         font-family:'Raleway Bold',arial ;
         font-weight: bolder;
-        font-size: 0.85em;
-        color:red;
+        font-size: 1em;
+        outline:0;
     }
     
 /*Onglet economique*/
@@ -189,33 +199,34 @@
     }
 
     .eco {
-        width:9em;
-        height:2em;
-        border: solid 0.06em  grey;
+        width:10em;
+        height:2.3em;
+        border: solid 0.13em  rgb(213, 211, 211);
         border-radius:1.2em;
         margin-left:0.6em;
         margin-right:0.3em;
-     }
+    }
       
     .logo-eco { 
         background:#DEEBFF;
-        width:2em;
-        height:2em;
+        width:2.5em;
+        height:2.5em;
         float:left;
-        border-radius: 1.2em;
-        border-bottom-left-radius: 1.2em;
+        margin-top:-0.1em;
+        margin-left:-0.2em;
+        border-radius: 1.2em; 
     }
             
     .logo-eco .fas {
         font-size:0.8em;
-        margin-left:0.6em;
-        margin-top:0.8em;       
+        margin-left:0.8em;
+        margin-top:1em;       
         color:#0065FC;        
     }
     
     .texte_eco {
-        width:8em;         
-        height:2.2em;
+        width:7.5em;         
+        height:2.1em;
         border-top-right-radius:1.2em;
         border-bottom-right-radius:1.2em;
         border:0;
@@ -227,33 +238,35 @@
     .familial {
         display:flex;
         flex-wrap:wrap;
-        width:7.5em;
-        height:2em;
-        border: solid 0.06em  grey;
+        width:8.5em;
+        height:2.3em;
+        border: solid 0.13em  rgb(213, 211, 211);
         border-radius:1.2em;
-        margin-left:0.6em;
+        margin-left:1.2em;
         margin-right:0.6em;
     }
     
     .logo-familial {    
         background:#DEEBFF;
-        width:2em;
-        height:2em;
+        width:2.5em;
+        height:2.5em;
         float:left;
+        margin-top:-0.13em;
+        margin-left:-0.15em;
         border-radius:1.2em;
         border-bottom-left-radius:1.2em;
      }
     
      .logo-familial .fas  {
-        font-size:0.9em;
-        margin-left:0.7em;
+        font-size:1.05em;
+        margin-left:0.8em;
         margin-top:0.6em;       
         color:#0065FC;        
     }
     
     .texte_familial {  
-        width:6.15em;
-        height:2.2em;
+        width:5.5em;
+        height:2.1em;
         border-top-right-radius:1.2em;
         border-bottom-right-radius:1.2em;
         border:0;
@@ -264,33 +277,35 @@
 /* Onglet Romantique*/
             
     .romantique {
-        width:9em;
-        height:2em;
-        border: solid 0.06em grey;
+        width:10em;
+        height:2.3em;
+        border: solid 0.13em  rgb(213, 211, 211);
         border-radius:1.2em;
-        margin-left:0.6em;
-        margin-right:0.6em;
+        margin-left:0.8em;
+        margin-right:0.8em;
+        padding-left:0em;
     }
            
     .logo-romantique {  
         background:#DEEBFF;
-        width:2em;
-        height:2em;
-        float:left;
+        width:2.5em;
+        height:2.5em;
+        margin-top:-0.1em;
+        margin-left:-0.15em;
         border-radius:1.2em;
         border-bottom-left-radius:1.2em;
     }
           
     .logo-romantique .fas  {
-        font-size:0.9em;
-        margin-left:0.6em;
-        margin-top:0.6em;       
+        font-size:1em;
+        margin-left:0.7em;
+        margin-top:0.7em;       
         color:#0065FC;        
     }
          
     .texte_romantique {
-        width:8em;
-        height:2.2em;
+        width:7.5em;
+        height:2.1em;
         border-top-right-radius:1.2em;
         border-bottom-right-radius:1.2em;
         border:0;
@@ -300,9 +315,9 @@
 /* Onglet Animaux*/
             
     .animaux{
-        width:11.5em;
-        height:2em;
-        border: solid 0.06em  grey;
+        width:13.5em;
+        height:2.3em;
+        border: solid 0.13em  rgb(213, 211, 211);
         border-radius:1.2em;
         margin-left:0.6em;
         margin-right:0.6em;
@@ -310,23 +325,24 @@
     
     .logo-animaux {
         background:#DEEBFF;
-        width:2em;
-        height:2em;
-        float:left;
+        width:2.5em;
+        height:2.5em;
+        margin-top:-0.1em;
+        margin-left:-0.15em;
         border-radius:1.2em;
         border-bottom-left-radius:1.2em;
     }
     
     .logo-animaux .fas {  
         font-size:1em;
-        margin-left:0.4em;
-        margin-top:0.3em;       
+        margin-left:0.7em;
+        margin-top:0.5em;       
         color:#0065FC;        
     }
     
     .texte_animaux {
-        width:11.1em;
-        height:2.2em;
+        width:10.9em;
+        height:2.1em;
         border-top-right-radius:1.2em;
         border-bottom-right-radius:1.2em;
         border:0;
@@ -430,8 +446,8 @@
         width:96%;
         height:60%;
         object-fit: cover;
-        margin-left:0.24em;
-        margin-top: 0.24em;
+        margin-left:0.3em;
+        margin-top: 0.3em;
         border-top-left-radius:1em;
         border-top-right-radius:1em;    
     }
@@ -773,7 +789,7 @@
 
     nav a:hover{
         color:#0065FC;
-        padding:0em 3em  0.8em 2em;
+        padding:0em 2.8em  0.8em 2em;
         border-bottom:2px solid;
         border-top:none;
     }
@@ -833,6 +849,10 @@
         margin-bottom:0.8em;
     }
 
+    .texte_familial {  
+        width:5em;
+    }
+
     .texte{
         margin-bottom:1em;
     }
@@ -851,6 +871,7 @@
         margin-top:10em;
         flex-direction: column-reverse;  
         margin-left:0em;  
+        margin-right:0em;
     }
 
     .entete_hebergement, .pied_hebergement{  
@@ -860,11 +881,12 @@
 
     .pied_hebergement{
         margin-left:1.5em;
+        margin-top:1.5em;
     }
 
     .populaire {      
         background:#F2F2F2;
-        width:21em;
+        width:24em;
         height:38em;
         margin-left:auto;
         margin-right:auto;
@@ -873,7 +895,7 @@
     }
 
     .logement{
-        width:20em;
+        width:23em;
         height:0em;
         background:white;
         margin-top:0em; 
@@ -884,8 +906,8 @@
 
     .bloc{
         width:100%;
-        height:12em;
-        margin:0.6em 1em 1.2em 1em;
+        height:11em;
+        margin:0.6em 1em 0.2em 1em;
         box-shadow: 0em 0.2em 3em rgb(216, 216, 216); 
     }
 
@@ -894,7 +916,7 @@
 
     .zone_activity{
         width:100%;
-        margin:91em 0em 1em 0em;
+        margin:80em 0em 1em 0em;
     }
 
     .entete_activites{
@@ -904,8 +926,7 @@
     }
 
     #conteneur2{
-        width:100%;
-        flex-direction: column;   
+        width:100%;   
         border-radius: 5em;
         display:flex;
         flex-direction: column;
@@ -913,9 +934,9 @@
     }
 
     .element_1, .element_2 , .element_3, .element_4, .element_5, .element_6{
-        width:17.5em;
+        width:20em;
         height:12em;   
-        margin:2em 0em 0em 0em;     
+        margin:1.2em 10em 0em 0em;     
     }
 
     .img_activites{
@@ -931,25 +952,26 @@
 
     .element_4{
         margin-top:1.8em;
-        margin-bottom:1.8em;
+        margin-bottom:0.5em;
     }
       
  /*pied de page*/
 
 
     footer{
-        width:26em;
+        width:22em;
         height:28em;
         flex-direction:column;
-        margin-top:60em;
-        margin-left:0em; 
+        margin-top:57em;
+        margin-left:auto; 
+        margin-right:auto;
         border-radius:0em;   
     }
 
     .propos, .nos_hebergements, .assistance{
         width:18em;
         margin-bottom:2em;
-        margin-left:2em;
+        margin-left:3em;
     }    
 }
         
