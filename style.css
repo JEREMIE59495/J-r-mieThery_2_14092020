@@ -545,8 +545,8 @@ a {
 #conteneur2{
     width:auto;
     display:flex;
-   /* justify-content: space-between;*/
-    height:27.7em;
+    justify-content: space-between;
+  /*  height:27.7em;*/
     margin:1em 2em 0em 0em;
     padding:0em 1.5em 0em 1.5em;
 }
@@ -560,7 +560,7 @@ a {
 
 .box{  
     width:18em;
-    height:27.7em;
+ /*   height:27.7em;*/
     padding:0em;
     margin-left: 0;
     margin-right: 0;
@@ -1002,6 +1002,8 @@ footer{
     }
     
     .box{
+        display:flex;
+  /**/  flex-direction: column;
         width:auto;
         height:auto;
         margin-left:1em;
@@ -1055,85 +1057,46 @@ footer{
     
 @media screen and (min-width: 600px) and (max-width: 1024px) {
 
+
+    header{
+        flex-direction:column;
+        width:50%;
+        margin-left:auto;
+        margin-right:auto;
+       
+    }
     /* hebergement*/
 
    
     #conteneur1{
-        width:100%;
+        width:50%;
         margin-top:10em;
         flex-direction: column-reverse;  
-        margin-left:0em;  
-        margin-right:0em;
-    }
-
-    .entete_hebergement, .pied_hebergement{  
-        margin-left:auto;
+        margin-left:auto;  
         margin-right:auto;
     }
 
-    .pied_hebergement{
-        margin-left:1.5em;
-        margin-top:1.5em;
-    }
-
-    .populaire {      
-        background:#F2F2F2;
-        width:auto;
-        height:38em;
-        margin-left:auto;
+    /*activites*/
+    #conteneur2{
+        width:50%;   
+        display:flex;
+        flex-direction: column;
+        padding:0;
+        margin-left:auto;  
         margin-right:auto;
-        margin-top:0em;   
-        border-radius:0em;         
     }
 
-    .element{
-        width:auto;
-        height:9.5em;
-        margin-left:0.5em;
-        margin-right:0.5em;
-        border-radius:1.5em;
-    }
-
-    .img_populaire{
-        height:8.7em;
-        border-top-left-radius: 1.3em;
-        border-bottom-left-radius: 1.3em;
+    .zone_activity{
+        width:50%;
+        margin:86em 0em 1em 0em;
+        margin-left:auto;  
+        margin-right:auto;
     }
    
 
-    .logement{
-        width:auto;
-        height:0em;
-        background:blue;
-        margin-top:0em; 
-        margin-left:auto;
-        margin-right:auto;
-        padding:0em; 
-        border-radius:0em;  
-    }
-
-    .bloc{
-        width:auto;
-        height:12em;
-        margin:0.6em 1em 0.2em 1em;
-        box-shadow: 0em 0.2em 3em rgb(216, 216, 216); 
-    }
 
 
-/*activites*/
 
-    .zone_activity{
-        width:5em;
-        margin:86em 0em 1em 0em;
-    }
-
-    .entete_activites{
-        width:12em;
-        margin-left:1.5em;
-        margin-right: auto;  
-    }    
-
-}
 }
 
 
