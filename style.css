@@ -738,10 +738,6 @@ footer{
 
 /*====================== mode responsive ======================*/
 
-        /* mobile entre 320 et 600px */
-        /* tablette entre 600 et 1024px */
-        /* pc et autre au dela de 1024*/
- 
 @media screen and (max-width:599px){
 
     body{
@@ -1280,7 +1276,11 @@ footer{
         margin-left:-0.15em; 
      }
   
-    .texte_eco, .texte_romantique, .texte_animaux {
+    .texte_eco{
+        width:6.2em;         
+        height:2.8em;
+    }
+    .texte_romantique{
         width:6.8em;         
         height:2.8em;
     }
@@ -1291,7 +1291,7 @@ footer{
     }
 
     .texte_familial {
-        width:4.5em;  
+        width:5em;  
         height:2.8em;       
     }
 
@@ -1468,7 +1468,10 @@ footer{
     
 }
 @media screen and (min-width:680px) and (max-width:1050px){
-    
+    .texte_eco {
+        width:6.8em;  
+        height:2.8em;       
+    }
     .texte_familial {
         width:5em;  
         height:2.8em;       
