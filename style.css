@@ -19,7 +19,7 @@
 
     .inscription{
         float:right;  
-        margin:2em 6em 0em 2em;
+        margin:2em 4.5em 0em 2em;
         color:#0065FC;
         font-weight:bold;
     }
@@ -42,6 +42,7 @@
     }
 
     .position{
+        font-size:0.95em;
         margin-left:1.5em;
         margin-right:1.2em;
     }
@@ -432,8 +433,8 @@ a {
 
 .bloc{
     background:white;
-    width:15em;
-    height:11.5em;
+    width:30%;
+    height:32%;
     border-radius:1em;
     margin-bottom:2em;
     box-shadow: 0em 0.4em 2em rgb(216, 216, 216);
@@ -563,12 +564,12 @@ a {
     width:18em;
     height:27.7em;
     padding:0em;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left:1.5em;
+   
 }
 
 .element_1, .element_4{
-    width:17em;
+    width:95%;
     height:27.7em;
     position:relative;
     border-radius:1em;
@@ -887,17 +888,24 @@ footer{
         border-radius:2em;
     }
 
-    .logo-eco .fas,  .logo-romantique .fas,.logo-animaux .fas {
+    .logo-eco .fas, .logo-animaux .fas {
         font-size:1.1em;
         margin-left:0.8em;
-        margin-top:1em;               
+        margin-top:0.9em;               
     }
 
     .logo-familial .fas{
         font-size:1.2em;
         margin-left:0.9em;
-        margin-top:1em; 
+        margin-top:0.8em; 
     }
+
+    .logo-romantique .fas{
+        font-size:1.2em;
+        margin-left:0.7em;
+        margin-top:0.9em; 
+    }
+
     .logo-familial {    
         margin-top:0em;
         margin-left:-0.15em; 
@@ -909,7 +917,7 @@ footer{
     }
 
     .familial{
-        width:9em;
+        width:7.8em;
         margin-left:0.5em;
     }
 
@@ -919,7 +927,7 @@ footer{
     }
 
     .texte_familial {
-        width:5.5em;  
+        width:4.5em;  
         height:2.8em;       
     }
 
@@ -941,7 +949,7 @@ footer{
     }
 
     ::placeholder{
-        font-size: 0.9em;
+        font-size: 0.8em;
         font-weight: bolder;
     }
   
