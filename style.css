@@ -697,7 +697,7 @@ a {
 footer{
     width:100%;
     display:flex;
-    height:10em;
+    height:12em;
     background:#F2F2F2;
     margin-top:1.8em;
     padding-top:2em;
@@ -923,7 +923,7 @@ footer{
     }
 
     .texte_eco{
-        width:6.4em;
+        width:6.7em;
         height:2.8em;
     }
 
@@ -1021,7 +1021,6 @@ footer{
     .logement{
         width:auto;
         height:0em;
-        background:blue;
         margin-top:0em; 
         margin-left:auto;
         margin-right:auto;
@@ -1122,7 +1121,7 @@ footer{
 
 }
 
-@media screen and (min-width:600px) and (max-width:1050px){
+@media screen and (min-width:600px) and (max-width:760px){
 
     body{  
         width:auto;
@@ -1266,19 +1265,20 @@ footer{
     .logo-eco, .logo-familial, .logo-romantique, .logo-animaux{
         width:3em;
         height:3em;
+        margin-top:0em;
         border-radius:2em;
     }
 
     .logo-eco .fas,  .logo-romantique .fas,.logo-animaux .fas {
         font-size:1.1em;
         margin-left:0.8em;
-        margin-top:1em;               
+        margin-top:0.9em;               
     }
 
     .logo-familial .fas{
         font-size:1.2em;
         margin-left:0.9em;
-        margin-top:1em; 
+        margin-top:0.8em; 
     }
     .logo-familial {    
         margin-top:0em;
@@ -1457,7 +1457,6 @@ footer{
       
  /*pied de page*/
 
-
     footer{
         width:50%;
         height:28em;
@@ -1476,7 +1475,10 @@ footer{
     } 
     
 }
-@media screen and (min-width:680px) and (max-width:1050px){
+@media screen and (min-width:680px) and (max-width:700px){
+    
+    /*filtre*/
+
     .texte_eco {
         width:6.8em;  
         height:2.8em;       
@@ -1486,11 +1488,241 @@ footer{
         height:2.8em;       
     }
 }
-@media screen and (min-width:700px) and (max-width:1050px){
+@media screen and (min-width:701px) and (max-width:760px){
     
-    .texte_familial {
-        width:5.8em;  
+    /*filtre*/ 
+
+    .texte_eco {
+        width:6.8em;  
         height:2.8em;       
     }
+    .texte_familial {
+        width:5.6em;  
+        height:2.8em;       
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1025px){
+    
+    /*section hebergement*/ 
+
+    .img_hebergement{
+        margin-left:0.2em;
+        margin-top:0.2em;
+    }
+
+    /*section activites*/ 
+
+    #conteneur2{
+        height:20em;   
+    }
+
+    .element_1, .element_4{
+        height:20em;
+    }
+    .box .element_4 h5{
+        margin-top:0.4em; 
+    }
+
+    .box .element_5 h5{
+        margin-left:0.5em; 
+        margin-top:0.8em
+    }
+  
+    .titre_activites{
+        margin-top:17em;
+    }
+   
+    .element_2{
+        height:10em;   
+    }
+
+    .titre_activites2{
+        margin-top:7em; 
+    }
+
+    .element_3{ 
+        height:7em;   
+    }
+
+    .titre_activites3{  
+        margin-top:4em;  
+    }
+
+    .element_5, .element_6{
+        height:8.5em;
+    }
+
+    
+    .titre_activites5{
+        margin-top:5.5em;    
+    }
+
+    .propos{
+        width:30%;
+        height:10em;
+        margin:0em 1em 0em 4em;
+        line-height: 0em;
+        text-align:left;
+    }
+    
+    .nos_hebergements{ 
+        width:20%;
+        height:9em;
+        margin:0em 8em 0em 2em;
+        line-height: 0em;
+        text-align:left;
+    }
+    
+    .assistance{
+        width:15%;
+        height:9em;
+        line-height: 0em;
+        text-align:left;
+    }
+}
+
+@media screen and (min-width:761px) and (max-width:899px){
+
+    
+    .info_complementaire{
+       width:60%;
+    }
+    
+   .texte{
+       display:none;
+   }
+   .recherche_affinee{
+       margin-left:0em;
+   }
+    .eco-family{ 
+        width:auto;           
+        display:flex;           
+        flex-direction:column;  
+        margin-left:1em;  
+    }
+
+    .familial{
+        margin-top:0.8em;
+        margin-left:0.5em;
+    }
+
+    #conteneur1{
+        width:100%;
+        flex-direction: column;  
+        margin-left:0em;  
+        margin-right:0em;
+    }
+
+    .logement{
+        width:auto;
+        margin:0 2em 2em 2em;
+    }
+
+    .populaire{
+        width:auto;
+        height:36em;
+        margin:0 2em 0 2em
+    }
+
+    .element {
+        width:60%;
+    } 
+
+    .zone_activity{
+        margin-top:42em;
+    }
+
+    #conteneur2{
+        height:15em;   
+    }
+
+    .element_1, .element_4{
+        height:15em;
+    }
+
+    .titre_activites{
+        margin-top:17em;
+    }
+   
+    .element_2{
+        height:6em;   
+    }
+
+    .titre_activites{ 
+        height:2em;
+        margin-top:13em; 
+        z-index:2;
+    }
+
+    .element_1 h5, .element_2 h5{
+        font-size:0.8em;
+        margin-left:1em;
+        margin-top:0.8em;
+    }
+
+    .titre_activites2, .titre_activites3, .titre_activites5{ 
+        height:2em;
+        margin-top:4em; 
+        z-index:2;
+    }
+
+    .element_3 h5, .element_6 h5{
+        font-size:0.8em;
+        margin-left:1em;
+        margin-top:0.8em;
+    }
+
+    .element_4 h5{
+        font-size:0.8em;
+        margin-left:1em;
+        margin-top:0.2em;
+    }
+    
+    .element_5 h5{
+        font-size:0.8em;
+        margin-left:1em;
+        margin-top:0.2em;
+    }
+    .element_3{ 
+        height:6em;   
+    }
+
+   
+
+    .element_5, .element_6{
+        height:6em;
+    }
+
+   
+
+    footer{
+        width:100%;
+        height:10em;
+    }
+
+    .propos{
+        width:30%;
+        height:10em;
+        margin:0em 1em 0em 3em;
+        line-height: 0em;
+        text-align:left;
+    }
+    
+    .nos_hebergements{ 
+        width:20%;
+        height:9em;
+        margin:0em 8em 0em 2em;
+        line-height: 0em;
+        text-align:left;
+    }
+    
+    .assistance{
+        width:15%;
+        height:9em;
+        line-height: 0em;
+        text-align:left;
+    }
+    
 }
   
