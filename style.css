@@ -1589,12 +1589,14 @@ footer{
        width:60%;
     }
     
-   .texte{
-       display:none;
-   }
-   .recherche_affinee{
-       margin-left:0em;
-   }
+    .texte{
+        display:none;
+    }
+
+    .recherche_affinee{
+        margin-left:0em;
+    }
+   
     .eco-family{ 
         width:auto;           
         display:flex;           
@@ -1606,6 +1608,8 @@ footer{
         margin-top:0.8em;
         margin-left:0.5em;
     }
+
+    /*hebergement*/
 
     #conteneur1{
         width:100%;
@@ -1628,6 +1632,8 @@ footer{
     .element {
         width:60%;
     } 
+
+    /*zone activites*/
 
     .zone_activity{
         margin-top:42em;
@@ -1684,17 +1690,16 @@ footer{
         margin-left:1em;
         margin-top:0.2em;
     }
+
     .element_3{ 
         height:6em;   
     }
-
-   
 
     .element_5, .element_6{
         height:6em;
     }
 
-   
+    /* pied de page*/
 
     footer{
         width:100%;
