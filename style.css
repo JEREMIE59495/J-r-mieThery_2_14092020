@@ -1,157 +1,159 @@
 /* structure de page partie pc*/
 
-    body{
-        width:100%; 
-        margin:0em;
-        padding:0;
-    }
+body{
+    width:100%; 
+    margin:0em;
+    padding:0;
+}
 
-    .logo{
-        width: 6em;
-        height: 2.4em;
-        margin:1em 0em 2em 1em;
-    }
-    
-    nav {
-        float:right;
-        margin-top:2em; 
-    }
+.logo{
+    width: 6em;
+    height: 2.4em;
+    margin:1em 0em 2em 1em;
+}
 
-    .inscription{
-        float:right;  
-        margin:2em 4.5em 0em 2em;
-        color:#0065FC;
-        font-weight:bold;
-    }
+nav {
+    float:right;
+    margin-top:2em; 
+}
+
+.inscription{
+    float:right;  
+    margin:2em 4.5em 0em 2em;
+    color:#0065FC;
+    font-weight:bold;
+}
 
 /*ancre*/
 
-    nav a{
-        margin-top:0em;
-        padding: 0em 0.6em 0em 0.6em;
-        color:black;
-        font-size:1em;  
-    }
+nav a{
+    margin-top:0em;
+    padding: 0em 0.6em 0em 0.6em;
+    color:black;
+    font-size:1em;  
+}
 
-    nav a:hover{
-        color:#0065FC;
-        padding:2.3em 0.6em  0em 0.6em;
-        margin-right:1.2em;
-        border-top:2px solid;
-        font-weight: bold;
-    }
+nav a:hover{
+    color:#0065FC;
+    padding:2.3em 0.6em  0em 0.6em;
+    margin-right:1.2em;
+    border-top:2px solid;
+    font-weight: bold;
+}
 
-    .position{
-        font-size:0.95em;
-        margin-left:1.5em;
-        margin-right:1.2em;
-    }
+.position{
+    font-size:0.95em;
+    margin-left:1.5em;
+    margin-right:1.2em;
+}
 
-    .titre, .recherche_ville,  .recherche_affinee, .info_complementaire{
-        margin-left:1.2em;
-    }
+.titre, .recherche_ville,  .recherche_affinee, .info_complementaire{
+    margin-left:1.2em;
+}
 
 /*police de caractère*/ 
 
-    p,li,h2, h4,h5, .pied_hebergement{
-        font-family: 'Raleway Bold',arial;
-        color:black;
-    }
+p,li,h2, h4,h5, .pied_hebergement{
+    font-family: 'Raleway Bold',arial;
+    color:black;
+}
 
-    a{
-        font-family:'Raleway';
-        color:black;
-    }
-    
+a{
+    font-family:'Raleway';
+    color:black;
+}
 
-    .titre h2{
-        font-size:1.3em;
-       line-height: 0em;
-    }
-    .titre p, .texte-info{
-        font-size:0.95em;
-    }
+.titre h2{
+    font-size:1.3em;
+    line-height: 0em;
+}
+
+.titre p, .texte-info{
+    font-size:0.95em;
+}
 
  /* BARRE DE RECHERCHE POSITION*/
         
-    .search { 
-        width:28em;
-        height:2.9em;
-        margin-bottom:1.5em;
-     }
-        
-    .search .logo-position {
-        display:block;
-        background:#F2F2F2;
-        width:3em;
-        height:2.9em;
-        float:left;
-        border-top-left-radius: 0.7em;
-        border-bottom-left-radius: 0.7em;
-     }
+.search { 
+    width:28em;
+    height:2.9em;
+    margin-bottom:1.5em;
+}
     
-    .logo-position .fas  {
-        margin-left: 1.2em;
-        margin-top:1em; 
-        font-size:0.95em; 
-     }
+.search .logo-position {
+    display:block;
+    background:#F2F2F2;
+    width:3em;
+    height:2.9em;
+    float:left;
+    border-top-left-radius: 0.7em;
+    border-bottom-left-radius: 0.7em;
+}
 
-    .search .btn-recherche {   
-        display:block;
-        background:#0065FC;
-        font-size:1em;
-        font-weight: bold;
-        width:7.5em;
-        height:2.9em;
-        border-top-right-radius: 0.7em;
-        border-bottom-right-radius: 0.7em;
-    }
+.logo-position .fas  {
+    margin-left: 1.2em;
+    margin-top:1em; 
+    font-size:0.95em; 
+}
 
-    .btn-recherche{
-        color:white;  
-    }
+.search .btn-recherche {   
+    display:block;
+    background:#0065FC;
+    font-size:1em;
+    font-weight: bold;
+    width:7.5em;
+    height:2.9em;
+    border-top-right-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+}
 
-    .search button {
-        display:none;
-        background:#0065FC;
-        width:3.8em;
-        height:4em;
-        border-radius: 1em;
-        border:0;
-        outline:0;
-    }
+.btn-recherche{
+    color:white;  
+}
 
-    .bouton .fas{
-        font-size:1.2em;
-        color:white;
-    }
-        
-    .search input {  
-        outline:0;
-        border:0;
-        border-top:0.1px solid rgb(240, 239, 239);
-        border-bottom:0.1px solid rgb(240, 239, 239);
-     }
-        
-    .search input[type=text] {
-        float:left;
-        font-size:0.9em;
-        height:2.9em;
-        width:14.5em;
-        font-weight: bold; 
-    }
+.search button {
+    display:none;
+    background:#0065FC;
+    width:3.8em;
+    height:4em;
+    border-radius: 1em;
+    border:0;
+    outline:0;
+}
 
-    input::placeholder{
-        color:black;
-    }
-    /*====================== filtres======================*/
+.bouton .fas{
+    font-size:1.2em;
+    color:white;
+}
     
- /*onglet*/
- header{
+.search input {  
+    outline:0;
+    border:0;
+    border-top:0.1px solid rgb(240, 239, 239);
+    border-bottom:0.1px solid rgb(240, 239, 239);
+}
+    
+.search input[type=text] {
+    float:left;
+    font-size:0.9em;
+    height:2.9em;
+    width:14.5em;
+    font-weight: bold; 
+}
+
+input::placeholder{
+    color:black;
+}
+/*====================== filtres======================*/
+    
+/*onglet*/
+
+header{
     width:auto;
     margin-top:0.5em;
     margin-left:1.5em
 }
+
 .filtre{
     width:80%;
     display:flex;
@@ -440,8 +442,6 @@ a {
     box-shadow: 0em 0.4em 2em rgb(216, 216, 216);
 } 
 
-
- 
 .img_hebergement{
     width:96%;
     height:60%;
@@ -487,7 +487,6 @@ a {
 }
 
 /* zone populaire*/
-
 
 .populaire{
     display:flex;
@@ -564,8 +563,14 @@ a {
     width:18em;
     height:27.7em;
     padding:0em;
-    margin-left:1.5em;
-   
+    margin-left:1.5em;   
+}
+
+.box_1{  
+    width:18em;
+    height:27.7em;
+    padding:0em;
+    margin-left:0.5em;   
 }
 
 .element_1, .element_4{
@@ -684,7 +689,7 @@ a {
     z-index:2;
 }
    
-.box h5{
+.box h5, .box_1 h5{
     margin-top:1em;
     margin-left:1.2em;
     font-size:1em;
@@ -851,7 +856,6 @@ footer{
         margin-top:2em;
         text-align:left;
     }
-
 
     .filtre{ 
         width:auto;           
@@ -1062,7 +1066,7 @@ footer{
         padding:0;
     }
     
-    .box{
+    .box, .box_1{
         display:flex;
         flex-direction: column;
         width:auto;
@@ -1217,12 +1221,11 @@ footer{
         font-size:1.1em;
         padding:-0;
     }
-
-         
+  
     .search .logo-position {
         width:3em;
         height:3.4em;
-     }
+    }
     
     .logo-position .fas  {
         margin-left:1em;
@@ -1280,10 +1283,11 @@ footer{
         margin-left:0.9em;
         margin-top:0.8em; 
     }
+
     .logo-familial {    
         margin-top:0em;
         margin-left:-0.15em; 
-     }
+    }
   
     .texte_eco{
         width:6.2em;         
@@ -1374,7 +1378,6 @@ footer{
         border-top-left-radius: 1.3em;
         border-bottom-left-radius: 1.3em;
     }
-   
 
     .logement{
         width:auto;
@@ -1420,7 +1423,7 @@ footer{
         margin-right:auto;
     }
     
-    .box{
+    .box,  .box_1{
         display:flex;
         flex-direction: column;
         width:auto;
