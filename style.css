@@ -52,7 +52,7 @@ nav a:hover{
 
 /*police de caractère*/ 
 
-p,li,h2, h4,h5, .pied_hebergement{
+li,h2, h4,h5, .pied_hebergement{
     font-family: 'Raleway Bold',arial;
     color:black;
 }
@@ -69,6 +69,7 @@ a{
 
 .titre p, .texte-info{
     font-size:0.95em;
+    font-family:'Raleway';
 }
 
  /* BARRE DE RECHERCHE POSITION*/
@@ -501,6 +502,7 @@ a {
     margin:2em 0em 1em 1em;
     font-weight:bold;
     font-size:1.3em;
+    font-family: 'Raleway Bold',arial;
 }
 
 .entete_populaire i{
