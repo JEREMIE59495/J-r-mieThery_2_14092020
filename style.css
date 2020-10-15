@@ -736,7 +736,6 @@ footer{
 }
 
 .propos a, .nos_hebergements a, .assistance a{
-    font-family:Raleway;
     font-size: 0.85em;
     list-style-type: none;
     margin-bottom:1em;
