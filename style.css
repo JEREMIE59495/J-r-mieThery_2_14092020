@@ -1201,10 +1201,6 @@ footer{
     .titre_activites{
         margin-top:17em;
     }
-   
-    .element_2{
-        height:6em;   
-    }
 
     .titre_activites{ 
         height:2em;
@@ -1230,23 +1226,13 @@ footer{
         margin-top:0.8em;
     }
 
-    .element_4 h5{
-        font-size:0.8em;
-        margin-left:1em;
-        margin-top:0.2em;
-    }
-    
-    .element_5 h5{
+    .element_2 h5,.element_4 h5, .element_5 h5{
         font-size:0.8em;
         margin-left:1em;
         margin-top:0.2em;
     }
 
-    .element_3{ 
-        height:6em;   
-    }
-
-    .element_5, .element_6{
+    .element_2, .element_3, .element_5, .element_6{
         height:6em;
     }
 
